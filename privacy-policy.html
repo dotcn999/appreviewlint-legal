@@ -5,26 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy - AppReviewLint</title>
   <style>
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #132247;
+      --muted: #566487;
+      --line: #dde4f2;
+      --brand: #1e5eff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "SF Pro Text", "Segoe UI", sans-serif;
+      color: var(--text);
+      background: radial-gradient(1000px 420px at 15% -15%, #dce8ff 0%, transparent 55%), var(--bg);
+      line-height: 1.75;
+    }
+    .wrap { max-width: 940px; margin: 0 auto; padding: 44px 20px 72px; }
+    .sheet {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(17, 34, 78, 0.09);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--brand);
+      background: #e9efff;
+      border-radius: 999px;
+      padding: 6px 10px;
+      margin-bottom: 12px;
+    }
+    h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 40px); line-height: 1.2; }
+    h2 { margin-top: 22px; margin-bottom: 8px; font-size: 21px; }
+    p { margin: 0 0 10px; }
+    .muted { color: var(--muted); }
+    a { color: var(--brand); text-decoration: none; font-weight: 600; }
+    .back { margin-top: 20px; }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <h1>Privacy Policy for AppReviewLint</h1>
-    <p>Effective date: April 8, 2026</p>
-    <p>AppReviewLint is a developer tool used to scan app packages and project files before App Store submission.</p>
-    <h2>1. Data We Process</h2>
-    <p>AppReviewLint may process files you select, such as .ipa, .xcodeproj, and .xcworkspace. Processing is primarily local on your Mac.</p>
-    <h2>2. Personal Data Collection</h2>
-    <p>We do not intentionally collect personal data for advertising. AppReviewLint does not include ad SDKs.</p>
-    <h2>3. Network Access</h2>
-    <p>When you use App Store Connect features, AppReviewLint may connect to Apple services using credentials you provide.</p>
-    <h2>4. Data Sharing</h2>
-    <p>We do not sell your data.</p>
-    <h2>5. Contact</h2>
-    <p>For questions, please use <a href="./support.html">Support</a>.</p>
-    <p><a href="./index.html">Back to Home</a></p>
+    <article class="sheet">
+      <span class="badge">Privacy Policy</span>
+      <h1>Privacy Policy for AppReviewLint</h1>
+      <p class="muted">Effective date: April 8, 2026</p>
+
+      <p>AppReviewLint is a developer tool used to scan app packages and project files before App Store submission. We are committed to protecting your privacy.</p>
+
+      <h2>1. Data We Process</h2>
+      <p>AppReviewLint may process files you select, including .ipa, .xcodeproj, and .xcworkspace. Processing is primarily performed locally on your Mac.</p>
+
+      <h2>2. Personal Data Collection</h2>
+      <p>We do not intentionally collect personal data for advertising. AppReviewLint does not include third-party ad SDKs.</p>
+
+      <h2>3. Network Access</h2>
+      <p>When you use App Store Connect related features, AppReviewLint may connect to Apple services using credentials or tokens you provide, only for the requested action.</p>
+
+      <h2>4. Credentials and Security</h2>
+      <p>Configured credentials are stored locally under your control. You are responsible for protecting your device and account.</p>
+
+      <h2>5. Data Sharing</h2>
+      <p>We do not sell your data. Data is not shared with third parties except where required to perform Apple service interactions initiated by you.</p>
+
+      <h2>6. Data Retention</h2>
+      <p>Reports and local configuration remain on your device until removed by you.</p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>AppReviewLint is not directed to children.</p>
+
+      <h2>8. Policy Updates</h2>
+      <p>This policy may be updated over time. Changes will be posted on this page with a revised effective date.</p>
+
+      <h2>9. Contact</h2>
+      <p>For privacy questions, please visit the <a href="./support.html">Support page</a>.</p>
+
+      <p class="back"><a href="./index.html">Back to Home</a></p>
+    </article>
   </main>
 </body>
 </html>
