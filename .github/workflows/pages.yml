@@ -4,9 +4,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "index.html"
-      - "privacy-policy.html"
-      - "support.html"
+      - "*.html"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
